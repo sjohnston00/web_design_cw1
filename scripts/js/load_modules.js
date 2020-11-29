@@ -5,7 +5,7 @@ desc: Loads the header, navigation bar and footer for every page, creating a Rea
  */
 
 $(function () {
-    $('#header').load('header.html');
-    $('#nav').load('nav.html');
-    $('#footer').load('footer.html');
+    $('#header').load('modules/header.html');
+    $('#nav').load('modules/nav.html');
+    $('#footer').load('modules/footer.html');
 });
