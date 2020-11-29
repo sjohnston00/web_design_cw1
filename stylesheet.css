@@ -1,5 +1,66 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap');
 
+* {
+    margin: 0;
+}
+
 body {
     font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    color: #FFFFFF;
+    background-color: #20328B;
+    height: 200px;
+    /*text-align: center;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: xx-large;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2A7CA4;
+    color: #FFFFFF;
+}
+
+nav div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*min-height: 60px;*/
+}
+
+nav div a {
+    padding: 20px 60px;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+#banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 553px;
+    background-image: url("media/images/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+#banner p {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: x-large;
+    padding: 0 500px;
 }
