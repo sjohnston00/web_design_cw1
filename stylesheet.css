@@ -64,3 +64,34 @@ a:visited {
     font-size: x-large;
     padding: 0 500px;
 }
+
+#testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#testimonials .testimonial {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+#testimonials .testimonial img {
+    width: 300px;
+    height: 300px;
+    /*display: block;*/
+}
+
+#testimonials .testimonial blockquote {
+    font-style: italic;
+    font-size: large;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#testimonials .testimonial p {
+    font-size: large;
+    font-weight: bold;
+}
