@@ -73,6 +73,7 @@ a:visited {
 
 .content {
     flex: 1;
+    margin: 50px 400px;
 }
 
 #banner {
