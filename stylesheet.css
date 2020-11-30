@@ -6,6 +6,9 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
 }
 
 header {
@@ -66,6 +69,10 @@ ul li a:visited,
 a:visited {
     color: #FFFFFF;
     text-decoration: none;
+}
+
+.content {
+    flex: 1;
 }
 
 #banner {
