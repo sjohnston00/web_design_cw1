@@ -39,10 +39,30 @@ nav div a {
     padding: 20px 60px;
 }
 
-a:link {
-    text-decoration: none;
+footer {
+    color: #FFFFFF;
+    background-color: #20328B;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
+footer div {
+    padding: 20px 0;
+}
+
+footer div ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+ul li a:visited,
 a:visited {
     color: #FFFFFF;
     text-decoration: none;
