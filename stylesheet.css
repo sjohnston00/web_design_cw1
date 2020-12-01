@@ -108,9 +108,6 @@ a:visited {
 }
 
 /*places a colour gradient over banner images*/
-/*On the funding.html banner, this also serves
-to hide the background image border, which I
-can't be bothered editing out.*/
 .gradient {
     display: inherit;
     flex-flow: inherit;
