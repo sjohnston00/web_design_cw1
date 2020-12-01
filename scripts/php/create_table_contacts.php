@@ -29,7 +29,7 @@ $query = $conn->prepare(
     forename varchar(15) NOT NULL,
     surname varchar(15) NOT NULL,
     email varchar(30) NOT NULL,
-    message varchar(500) NOT NULL,
+    message varchar(5000) NOT NULL,
     PRIMARY KEY (id),
     UNIQUE id (id),
     KEY id_2 (id))"

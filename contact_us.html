@@ -18,8 +18,8 @@
         external services, such as the LMI for All API, university listings and funding listings.
     </p>
     <br>
-    <div class="table-container">
-        <table>
+    <div class="form-container">
+        <form action="scripts/php/process_contact_data.php" id="contact-form" method="POST">
             <label for="forename">Forename</label>
             <input id="forename" name="forename" placeholder="Enter your forename" type="text">
 
@@ -33,7 +33,7 @@
             <textarea id="message" name="message" placeholder="Enter your message" style="height:200px"></textarea>
 
             <input type="submit" value="Submit">
-        </table>
+        </form>
     </div>
 </main>
 
