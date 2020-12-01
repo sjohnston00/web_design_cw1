@@ -11,6 +11,18 @@ body {
     flex-direction: column;
 }
 
+h1, h2 {
+    font-size: 200%;
+}
+
+h3 {
+    font-size: 150%;
+}
+
+h4 {
+    font-size: 120%;
+}
+
 header {
     color: #FFFFFF;
     background-color: #20328B;
@@ -45,12 +57,15 @@ nav div a {
 footer {
     color: #FFFFFF;
     background-color: #20328B;
+}
+
+footer #footer-lists {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-footer div {
+footer #footer-lists div {
     padding: 20px 0;
 }
 
@@ -58,6 +73,11 @@ footer div ul {
     padding: 0;
     margin: 0;
     list-style-type: none;
+}
+
+footer #footer-copyright {
+    text-align: center;
+    padding: 20px 0;
 }
 
 a {
@@ -76,21 +96,51 @@ a:visited {
     margin: 50px 400px;
 }
 
-#banner {
+.banner {
     display: flex;
+    flex-flow: column;
     justify-content: center;
     align-items: center;
     height: 553px;
-    background-image: url("media/images/banner.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-#banner p {
-    color: #FFFFFF;
+/*places a colour gradient over banner images*/
+/*On the funding.html banner, this also serves
+to hide the background image border, which I
+can't be bothered editing out.*/
+.gradient {
+    display: inherit;
+    flex-flow: inherit;
+    justify-content: inherit;
+    align-items: inherit;
+    height: inherit;
+
+    /*TODO: This would be a very flexible class without this rule. Consider moving it.*/
+    background-image: linear-gradient(
+            to right,
+            rgba(252, 253, 248, 0.3),
+            rgba(252, 253, 248, 1)
+    );
+}
+
+.banner p {
     text-align: center;
     font-size: x-large;
-    padding: 0 500px;
+    padding: 0 250px;
+}
+
+#index-banner {
+    background-image: url("media/images/banner.jpg");
+    color: #FFFFFF;
+}
+
+#funding-banner {
+    background-image: url("media/images/money.jpg");
+    background-size: 50%;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 #testimonials {
@@ -122,4 +172,50 @@ a:visited {
 #testimonials .testimonial p {
     font-size: large;
     font-weight: bold;
+}
+
+.overview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 200px;
+    font-size: larger;
+}
+
+.content h3 {
+    padding-bottom: 20px;
+}
+
+#resources-list a {
+    color: #000000;
+}
+
+#resources-list li:nth-child(1),
+#resources-list li:nth-child(4),
+#resources-list li:nth-child(7) {
+    font-size: larger;
+    font-weight: bold;
+}
+
+#resources-list li:nth-child(2),
+#resources-list li:nth-child(5),
+#resources-list li:nth-child(8) {
+    font-weight: normal;
+    text-decoration: underline;
+    list-style-type: none;
+}
+
+#resources-list li:nth-child(3),
+#resources-list li:nth-child(6),
+#resources-list li:nth-child(9) {
+    font-weight: normal;
+    font-style: italic;
+    list-style-type: none;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+#resources-list li:nth-child(3),
+#resources-list li:nth-child(6),
+#resources-list li:nth-child(9) {
+    padding-bottom: 40px;
 }
