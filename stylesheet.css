@@ -117,13 +117,6 @@ can't be bothered editing out.*/
     justify-content: inherit;
     align-items: inherit;
     height: inherit;
-
-    /*TODO: This would be a very flexible class without this rule. Consider moving it.*/
-    background-image: linear-gradient(
-            to right,
-            rgba(252, 253, 248, 0.3),
-            rgba(252, 253, 248, 1)
-    );
 }
 
 .banner p {
@@ -141,6 +134,14 @@ can't be bothered editing out.*/
     background-image: url("media/images/money.jpg");
     background-size: 50%;
     color: rgba(0, 0, 0, 0.7);
+}
+
+#funding-banner .gradient {
+    background-image: linear-gradient(
+            to right,
+            rgba(252, 253, 248, 0.3),
+            rgba(252, 253, 248, 1)
+    );
 }
 
 #testimonials {
