@@ -91,7 +91,7 @@ a:visited {
     text-decoration: none;
 }
 
-.content {
+.link-list {
     flex: 1;
     margin: 50px 400px;
 }
@@ -197,7 +197,7 @@ can't be bothered editing out.*/
     font-size: larger;
 }
 
-.content h3 {
+.link-list h3 {
     padding-bottom: 20px;
 }
 
@@ -233,4 +233,11 @@ can't be bothered editing out.*/
 #resources-list li:nth-child(6),
 #resources-list li:nth-child(9) {
     padding-bottom: 40px;
+}
+
+#lmi-links-list a {
+    font-weight: normal;
+    text-decoration: underline;
+    list-style-type: none;
+    color: #000000;
 }
