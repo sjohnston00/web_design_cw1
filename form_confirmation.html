@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UK Job Search - Submission Confirmation</title>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="module-container" id="header"></div>
+<div class="module-container" id="nav"></div>
+
+<!--  Unique page content here  -->
+<main>
+
+    <?php
+    $fname = $_GET['fname'];
+    $sname = $_GET['sname'];
+    $msg = $_GET['msg'];
+    echo <<<EOT
+    <h2>Thank you, $fname $sname.</h2>
+    <br>
+    <p>The following message has been received:</p>
+    <br>
+    <p id="confirm-message">$msg</p>
+    <br>
+    <p id="confirm-note">Please allow for 12-48 hours for a response.</p>
+    EOT;
+    ?>
+</main>
+
+<div class="module-container" id="footer"></div>
+<script src="scripts/js/jquery-3.5.1.min.js"></script>
+<script src="scripts/js/load_modules.js"></script>
+</body>
+</html>

@@ -281,3 +281,13 @@ input[type=submit]:hover {
     padding: 20px;
     margin: 50px 200px;
 }
+
+/*These rules apply to the text found in form_confirmation.html*/
+#confirm-message {
+    font-style: italic;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#confirm-note {
+    font-style: bold;
+}
