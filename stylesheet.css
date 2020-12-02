@@ -362,6 +362,10 @@ input[type=submit]:hover {
     border-top: none;
 }
 
+#uni-link-list div:last-child {
+    border-bottom: none;
+}
+
 .uni-list-entry {
     padding: 25px 0;
     border-top: 2px solid #000000;

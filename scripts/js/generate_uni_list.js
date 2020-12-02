@@ -12,6 +12,7 @@ const getUniJson = () => {
     let requestUrl = textBox.value ? `${baseUrl}&name=${textBox.value}` : baseUrl;
 
     container.setAttribute("class", "container");
+    clearUniList(container);
     let request = new XMLHttpRequest();
 
     request.open("GET", requestUrl, true);
@@ -20,6 +21,8 @@ const getUniJson = () => {
         // https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readyState
         if (this.readyState === 4 && this.status === 200) {
             const data = JSON.parse(request.response);
+
+            // if textbox is empty, load all results
 
             data.forEach(uni => {
                 const div = document.createElement("div");
@@ -43,3 +46,9 @@ const getUniJson = () => {
 }
 
 export default getUniJson;
+
+function clearUniList(node) {
+    while (node.hasChildNodes()) {
+        node.removeChild(node.lastChild);
+    }
+}
