@@ -18,7 +18,6 @@ const getUniJson = () => {
     request.open("GET", requestUrl, true);
     console.log('OPENED', request.readyState);
     request.onreadystatechange = function () {
-        // https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest/readyState
         if (this.readyState === 4 && this.status === 200) {
             const data = JSON.parse(request.response);
 
