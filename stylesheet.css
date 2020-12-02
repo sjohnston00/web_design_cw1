@@ -170,6 +170,20 @@ a:visited {
     );
 }
 
+#universities-banner {
+    background-image: url("media/images/uni.jpg");
+    background-size: 50%;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#universities-banner .gradient {
+    background-image: linear-gradient(
+            to right,
+            rgba(67, 53, 46, 0.3),
+            rgba(67, 53, 46, 1)
+    );
+}
+
 #testimonials {
     display: flex;
     justify-content: center;
@@ -289,5 +303,53 @@ input[type=submit]:hover {
 }
 
 #confirm-note {
-    font-style: bold;
+    font-weight: bold;
+}
+
+/*These rules apply to search bars*/
+/*They were a massive pain in the arse*/
+.search-bar {
+    /*margin: 50px 0;*/
+    width: 100%;
+    color: #FFFFFF;
+    background-color: rgba(128, 200, 76, 1);
+    font-size: 120%;
+    display: flex;
+    flex-flow: column;
+}
+
+.search-bar div:nth-child(1) * {
+    margin: 20px;
+}
+
+.search-bar div:nth-child(1) h3 {
+    margin: 14px;
+    padding-bottom: 0;
+}
+
+.search-bar div:nth-child(2) input[type=text] {
+    margin: 15px;
+    width: 85%;
+}
+
+.search-bar div:nth-child(1) p,
+.search-bar div:nth-child(2) input[type=text] {
+    float: left;
+}
+
+.search-bar div:nth-child(1) h3,
+.search-bar div:nth-child(2) input[type=submit] {
+    float: right;
+}
+
+.search-bar div:nth-child(2) {
+    background-color: rgba(96, 167, 65, 1);
+    margin-bottom: 20px;
+}
+
+.search-bar div:nth-child(2) input[type=submit] {
+    margin: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #C9333D;
 }
