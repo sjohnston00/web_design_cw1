@@ -28,14 +28,12 @@
         <h3>Search</h3>
     </div>
     <div>
-        <form action="">
-            <div>
-                <input id="uni" name="uni" placeholder="Enter a university" type="text">
-            </div>
-            <div>
-                <input type="submit" value="Go">
-            </div>
-        </form>
+        <div>
+            <input id="uni" name="uni" placeholder="Enter a university" type="text">
+        </div>
+        <div>
+            <input class="search-btn" id="uni-search-btn" type="submit" value="Go">
+        </div>
     </div>
 </div>
 
@@ -43,8 +41,10 @@
 
 </div>
 <div class="module-container" id="footer"></div>
-<script src="scripts/js/jquery-3.5.1.min.js"></script>
+
+<script src="scripts/js/lib/jquery-3.5.1.min.js"></script>
 <script src="scripts/js/load_modules.js"></script>
-<script src="scripts/js/generate_uni_list.js"></script>
+<script src="scripts/js/universities.js" type="module"></script>
+<!--<script src="scripts/js/generate_uni_list.js"></script>-->
 </body>
 </html>
