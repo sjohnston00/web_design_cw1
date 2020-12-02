@@ -354,8 +354,23 @@ input[type=submit]:hover {
     background-color: #C9333D;
 }
 
+.result-count-container {
+    padding: 50px 100px 0 100px;
+    /*display: flex;*/
+    /*flex-flow: row;*/
+}
+
+.result-count-container div:first-child h3 {
+    float: left;
+}
+
+.result-count-container div:last-child p {
+    float: right;
+    font-size: 120%;
+}
+
 #uni-link-list {
-    padding: 100px;
+    padding: 0 100px 100px 100px;
 }
 
 #uni-link-list div:first-child {
@@ -374,4 +389,5 @@ input[type=submit]:hover {
 
 .uni-list-entry a {
     color: #000000;
+    text-decoration: underline;
 }
