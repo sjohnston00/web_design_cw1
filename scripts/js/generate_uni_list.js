@@ -16,14 +16,9 @@ const getUniJson = () => {
     container.setAttribute("class", "container");
     clearUniList(container);
 
-    let request = new XMLHttpRequest();
-
-    request.open("GET", requestUrl, true);
-    console.log('OPENED', request.readyState);
-    request.onreadystatechange = function () {
-        if (this.readyState === 4 && this.status === 200) {
-            const data = JSON.parse(request.response);
-
+    fetch(requestUrl)
+        .then(response => response.json())
+        .then(data => {
             data.forEach(uni => {
                 count++;
                 const div = document.createElement("div");
@@ -39,14 +34,9 @@ const getUniJson = () => {
                 div.appendChild(a);
                 container.appendChild(div);
             });
-        } else {
-            console.log(`Failed. readyState: ${this.readyState}, status: ${this.status}`);
-        }
-
-        resultCount.textContent = `${count}`;
-        console.log(count);
-    }
-    request.send();
+            resultCount.textContent = `${count}`;
+        })
+        .catch(error => console.log(`response error: ${error}`));
 }
 
 export default getUniJson;
