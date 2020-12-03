@@ -389,30 +389,33 @@ input[type=submit]:hover {
     font-size: 120%;
 }
 
-#uni-link-list {
+#uni-link-list,
+#job-link-list {
     padding: 0 100px 100px 100px;
 }
 
-#uni-link-list div:first-child {
+#uni-link-list div:first-child,
+#job-link-list div:first-child {
     border-top: none;
 }
 
-#uni-link-list div:last-child {
+#uni-link-list div:last-child,
+#job-link-list div:last-child {
     border-bottom: none;
 }
 
-.uni-list-entry {
+.list-entry {
     padding: 25px 0;
     border-top: 2px solid #000000;
     border-bottom: 2px solid #000000;
 }
 
-.uni-list-entry a {
+.list-entry a {
     color: #20328B;
     text-decoration: underline;
 }
 
-.uni-list-entry a:visited {
+.list-entry a:visited {
     color: purple;
     text-decoration: underline;
 }

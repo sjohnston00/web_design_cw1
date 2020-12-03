@@ -1,19 +1,18 @@
 /*
-file: generate_uni_list.js
+file: generate_job_list.js
 author: Ross McLean
-desc: Gets universities from an API and builds a list from the results
+desc: Gets jobs from an API and builds a list from the results
  */
 
 import clearList from "./utilities.js";
 
-const getUniJson = () => {
-    const container = document.getElementById("uni-link-list");
-    const textBox = document.getElementById("uni");
-    const resultCount = document.getElementById("uni-result-count");
+const getJobJson = () => {
+    const container = document.getElementById("job-link-list");
+    const textBox = document.getElementById("job");
+    const resultCount = document.getElementById("job-result-count");
 
     let count = 0;
-    let baseUrl = "http://universities.hipolabs.com/search?country=United Kingdom";
-    let requestUrl = textBox.value ? `${baseUrl}&name=${textBox.value.trim()}` : baseUrl;
+    let requestUrl = `http://api.lmiforall.org.uk/api/v1/soc/search?q=${textBox.value.trim()}`;
 
     container.setAttribute("class", "container");
     clearList(container);
@@ -41,9 +40,9 @@ const getUniJson = () => {
         .catch(error => console.log(`response error: ${error}`));
 }
 
-export default getUniJson;
+export default getJobJson;
 
-function clearUniList(node) {
+function clearJobList(node) {
     while (node.hasChildNodes()) {
         node.removeChild(node.lastChild);
     }
