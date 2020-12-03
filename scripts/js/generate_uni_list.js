@@ -11,7 +11,7 @@ const getUniJson = () => {
 
     let count = 0;
     let baseUrl = "http://universities.hipolabs.com/search?country=United Kingdom";
-    let requestUrl = textBox.value ? `${baseUrl}&name=${textBox.value}` : baseUrl;
+    let requestUrl = textBox.value ? `${baseUrl}&name=${textBox.value.trim()}` : baseUrl;
 
     container.setAttribute("class", "container");
     clearUniList(container);
