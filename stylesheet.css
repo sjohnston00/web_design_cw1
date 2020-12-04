@@ -376,16 +376,12 @@ input[type=submit]:hover {
 
 .result-count-container {
     padding: 50px 100px 0 100px;
-    /*display: flex;*/
-    /*flex-flow: row;*/
+    display: flex;
+    flex-flow: row;
 }
 
-.result-count-container div:first-child h3 {
-    float: left;
-}
-
-.result-count-container div:last-child p {
-    float: right;
+.result-count-container p {
+    font-weight: bold;
     font-size: 120%;
 }
 
