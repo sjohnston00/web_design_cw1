@@ -8,7 +8,6 @@ import clearList from "./utilities.js";
 
 const getJobJson = () => {
     const textBox = document.getElementById("job");
-    const resultCount = document.getElementById("job-result-count");
 
     let requestUrl = `http://api.lmiforall.org.uk/api/v1/soc/search?q=${textBox.value.trim()}`;
 
