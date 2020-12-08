@@ -433,6 +433,16 @@ main h2 {
     padding-bottom: 20px;
 }
 
-main p {
+main h4 {
+    padding-bottom: 20px;
+}
+
+main p, main #tasks-list {
     padding-bottom: 40px;
+}
+
+main #soc-text, main #tags-paragraph {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: smaller;
+    padding-bottom: 10px;
 }
