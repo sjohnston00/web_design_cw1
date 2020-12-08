@@ -427,3 +427,12 @@ input[type=submit]:hover {
     color: purple;
     text-decoration: underline;
 }
+
+/*job.html styles*/
+main h2 {
+    padding-bottom: 20px;
+}
+
+main p {
+    padding-bottom: 40px;
+}
