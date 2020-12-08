@@ -1,4 +1,3 @@
-<?php
 echo <<<EOL
 <!DOCTYPE html>
 <html lang="en">

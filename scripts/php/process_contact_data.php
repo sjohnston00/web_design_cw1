@@ -32,6 +32,7 @@ $forename = $_POST['forename'];
 $surname = $_POST['surname'];
 $email = $_POST['email'];
 $message = $_POST['message'];
+$currentYear = date("Y");
 
 $query->execute();
 $conn = null;
@@ -45,8 +46,30 @@ echo <<<EOL
     <link href="../../stylesheet.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div class="module-container" id="header"></div>
-<div class="module-container" id="nav"></div>
+<div class="module-container" id="header">
+    <header>
+        <a href="../../index.html"><h1>UK Job Search</h1></a>
+    </header>
+</div>
+<div class="module-container" id="nav">
+    <nav>
+        <div>
+            <a href="../../job_search.html">Job Search</a>
+        </div>
+        <div>
+            <a href="../../funding.html">Funding</a>
+        </div>
+        <div>
+            <a href="../../about_us.html">About Us</a>
+        </div>
+        <div>
+            <a href="../../contact_us.html">Contact Us</a>
+        </div>
+        <div>
+            <a href="../../universities.html">Universities</a>
+        </div>
+    </nav>
+</div>
 
 <!--  Unique page content here  -->
 <main>
@@ -59,15 +82,43 @@ echo <<<EOL
     <p id="confirm-note">Please allow for 12-48 hours for a response.</p>
 </main>
 
-<div class="module-container" id="footer"></div>
+<div class="module-container" id="footer">
+    <footer>
+    <div id="footer-lists">
+        <div id="footer-left-1">
+            <h4>Social</h4>
+            <ul>
+                <li><a href="https://www.facebook.com">Facebook</a></li>
+                <li><a href="https://www.twitter.com">Twitter</a></li>
+            </ul>
+        </div>
+        <div id="footer-left-2">
+            <h4>Fork</h4>
+            <ul>
+                <li><a href="https://github.com/yerbestpal/web_design_cw1">github</a></li>
+            </ul>
+        </div>
+        <div id="footer-centre">
+            <h4>Legal</h4>
+            <ul>
+                <li><a href="../../t_and_c.html">Terms & Conditions</a></li>
+            </ul>
+        </div>
+        <div id="footer-right">
+            <h4>Contact</h4>
+            <ul>
+                <li>0123456789</li>
+                <li><a href="#">ukjobs@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <div id="copyright-container">
+        <p id="footer-copyright">Copyright© UK Job Search $currentYear</p>
+        <p id="footer-date"></p>
+    </div>
+</footer>
+</div>
 <script src="../js/lib/jquery-3.5.1.min.js"></script>
-<script>
-$(function () {
-    $('#header').load('../../modules/header.html');
-    $('#nav').load('../../modules/nav.html');
-    $('#footer').load('../../modules/footer.html');
-});
-</script>
 </body>
 </html>
 EOL;

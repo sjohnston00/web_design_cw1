@@ -46,6 +46,7 @@ const getJobJson = () => {
 
                 div.className = "list-entry";
                 a.textContent = job["title"];
+                a.href = `job.html?soc=${job["soc"]}`;
                 p.textContent = job["description"];
 
                 h3.appendChild(a);
