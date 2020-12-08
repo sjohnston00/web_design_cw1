@@ -13,7 +13,7 @@ $conn = "";
 try {
     $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    echo "Connected successfully <br />";
+//    echo "Connected successfully <br />";
 } catch (PDOException $e) {
     echo "Connection failed: " . $e->getMessage();
 }
@@ -36,13 +36,38 @@ $message = $_POST['message'];
 $query->execute();
 $conn = null;
 
-// TODO: Sanitise the variables in the URL so they are not visible once sent
-// https://www.plus2net.com/php_tutorial/variables2.php
-redirect("../../form_confirmation.html?fname=$forename&sname=$surname&msg=$message");
+echo <<<EOL
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UK Job Search - Submission Confirmation</title>
+    <link href="../../stylesheet.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<div class="module-container" id="header"></div>
+<div class="module-container" id="nav"></div>
 
-// Use to redirect to a specified URL. Since this is a helper function, it might be better off somewhere else.
-function redirect($url, $statusCode = 303)
-{
-    header("Location: " . $url, true, $statusCode);
-    die();
-}
+<!--  Unique page content here  -->
+<main>
+    <h2>Thank you, $forename $surname.</h2>
+    <br>
+    <p>The following message has been received:</p>
+    <br>
+    <p id="confirm-message">$message</p>
+    <br>
+    <p id="confirm-note">Please allow for 12-48 hours for a response.</p>
+</main>
+
+<div class="module-container" id="footer"></div>
+<script src="../js/lib/jquery-3.5.1.min.js"></script>
+<script>
+$(function () {
+    $('#header').load('../../modules/header.html');
+    $('#nav').load('../../modules/nav.html');
+    $('#footer').load('../../modules/footer.html');
+});
+</script>
+</body>
+</html>
+EOL;

@@ -42,6 +42,10 @@ header {
     font-size: xx-large;
 }
 
+header a h1 {
+    color: #FFFFFF;
+}
+
 nav {
     display: flex;
     justify-content: center;
@@ -59,6 +63,7 @@ nav div {
 
 nav div a {
     padding: 20px 60px;
+    color: #FFFFFF;
 }
 
 footer {
