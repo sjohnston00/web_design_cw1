@@ -87,6 +87,13 @@ footer div ul {
     list-style-type: none;
 }
 
+footer #copyright-container {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+}
+
 footer #footer-copyright {
     text-align: center;
     padding: 20px 0;
