@@ -4,13 +4,13 @@ author: Ross McLean
 desc: Handles events related to elements on universities.html
  */
 
-import getUniJson from "./generate_uni_list.js";
+import getUniJson from './get_uni_data.js'
 
 // document on ready
 $(function () {
-    getUniJson();
+  getUniJson()
 })
 
-$("#uni-search-btn").on("click", function () {
-    getUniJson();
-});
+$('#uni-search-btn').on('click', function () {
+  getUniJson()
+})

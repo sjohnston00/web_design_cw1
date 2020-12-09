@@ -446,3 +446,20 @@ main #soc-text, main #tags-paragraph {
     font-size: smaller;
     padding-bottom: 10px;
 }
+
+#job-main {
+    margin-bottom: 0;
+}
+
+#rate-of-pay-title {
+    padding-top: 20px;
+}
+
+#location-title, #chart {
+    padding: 50px 200px;
+}
+
+#chart {
+    width: 400px;
+    height: auto;
+}
