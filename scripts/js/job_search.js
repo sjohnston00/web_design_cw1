@@ -7,7 +7,7 @@ desc: Handles events related to elements on job_search.html
 import { getJobList } from './get_job_data.js'
 
 const resultCountContainer = document.getElementById('result-count-container')
-$(resultCountContainer).children().remove();
+$(resultCountContainer).children().remove()
 
 // document on ready
 $(function () {

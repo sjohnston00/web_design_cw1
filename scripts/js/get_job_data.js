@@ -4,7 +4,7 @@ author: Ross McLean
 desc: Gets jobs from an API and builds a list from the results
  */
 
-import { clearList, getSocFromUrl } from './utilities.js'
+import * as Utilities from './utilities.js'
 
 export const getJobList = () => {
   const textBox = document.getElementById('job')
@@ -27,7 +27,7 @@ export const getJobList = () => {
       $(resultCountContainer).children().remove()
 
       jobListContainer.setAttribute('class', 'container')
-      clearList(jobListContainer)
+      Utilities.clearList(jobListContainer)
 
       p1.id = 'uni-result-count'
       p1.innerHTML = `${data.length}`
@@ -64,7 +64,7 @@ export const getJobList = () => {
 }
 
 export const getJobData = () => {
-  const requestUrl = `http://api.lmiforall.org.uk/api/v1/soc/code/${getSocFromUrl()}`
+  const requestUrl = `http://api.lmiforall.org.uk/api/v1/soc/code/${Utilities.getSocFromUrl()}`
 
   fetch(requestUrl)
     .then(response => response.json())
@@ -126,7 +126,8 @@ export const getLocation = () => {
 
 const getLocationsEstimatedPay = regionValue => {
   const requestUrl =
-    `http://api.lmiforall.org.uk/api/v1/ashe/estimatePay?soc=${getSocFromUrl()}&filters=region%3A${regionValue}`
+    `http://api.lmiforall.org.uk/api/v1/ashe/estimatePay?
+    soc=${Utilities.getSocFromUrl()}&filters=region%3A${regionValue}`
 
   fetch(requestUrl, {
     headers: {

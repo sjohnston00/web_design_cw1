@@ -13,6 +13,5 @@ export const clearList = node => {
 export const getSocFromUrl = () => {
   const urlQueryString = window.location.search
   const urlParameters = new URLSearchParams(urlQueryString)
-  const soc = urlParameters.get('soc')
-  return soc
+  return urlParameters.get('soc')
 }

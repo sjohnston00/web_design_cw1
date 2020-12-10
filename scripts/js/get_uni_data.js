@@ -4,7 +4,7 @@ author: Ross McLean
 desc: Gets universities from an API and builds a list from the results
  */
 
-import clearList from './utilities.js'
+import { clearList } from './utilities.js'
 
 const getUniJson = () => {
   const textBox = document.getElementById('uni')
