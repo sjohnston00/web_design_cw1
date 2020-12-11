@@ -79,7 +79,7 @@ export const getJobData = () => {
       document.getElementById('tasks-title').innerText = 'Tasks'
 
       // Divide tasks into individual list items
-      //TODO: Stop loop from appending empty children
+      // TODO: Stop loop from appending empty children
       const tasksList = document.getElementById('tasks-list')
       let subArray = []
       const regex = /^[A-Za-z\s]+$/;  // only match letters and spaces
