@@ -359,7 +359,8 @@ input[type=submit]:hover {
     padding-bottom: 0;
 }
 
-.search-bar div:nth-child(2) input[type=text] {
+.search-bar div:nth-child(2) input[type=text],
+.search-bar div:nth-child(2) select {
     margin: 15px;
     width: 85%;
 }
