@@ -115,7 +115,6 @@ export const getLocation = () => {
       regionsArray.forEach(object => {
         const searchTerm = combo.options[combo.selectedIndex].text.toLowerCase().trim()
         if (object['name'].toLowerCase().includes(searchTerm)) {
-          console.log(object['name'] + ' ' + object['value'])
           document.getElementById('location-title').innerText = object['name']
           getLocationsEstimatedPay(object['value'])
         }
@@ -136,7 +135,24 @@ const getLocationsEstimatedPay = regionValue => {
   })
     .then(response => response.json())
     .then(data => {
-      generateChart(data['series'])  // passes pay data to chart
+      sortDataByYear(data['series'])
     })
     .catch(error => console.log(`response error: ${error}`))
+}
+
+const sortDataByYear = data => {
+  const sortedData = data
+  let swapped
+  do {
+    swapped = false
+    for (let i = 0; i < sortedData.length - 1; i++) {
+      if (sortedData[i].year > sortedData[i + 1].year) {
+        let temp = sortedData[i]
+        sortedData[i] = sortedData[i + 1]
+        sortedData[i + 1] = temp
+        swapped = true
+      }
+    }
+  } while (swapped)
+  generateChart(sortedData)  // passes pay data to chart
 }
