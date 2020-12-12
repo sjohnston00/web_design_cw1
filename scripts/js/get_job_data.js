@@ -5,6 +5,7 @@ desc: Contains functions which interrogate the LMI API
  */
 
 import * as Utilities from './utilities.js'
+import { generateChart } from './build-chart.js'
 
 export const getJobList = () => {
   const textBox = document.getElementById('job')
@@ -116,7 +117,7 @@ export const getLocation = () => {
         if (object['name'].toLowerCase().includes(searchTerm)) {
           console.log(object['name'] + ' ' + object['value'])
           document.getElementById('location-title').innerText = object['name']
-          getLocationsEstimatedPay(object['value'])  // this returns pay data
+          getLocationsEstimatedPay(object['value'])
         }
       })
     })
@@ -135,10 +136,7 @@ const getLocationsEstimatedPay = regionValue => {
   })
     .then(response => response.json())
     .then(data => {
-      console.log(data['series'])
-      return data['series']
+      generateChart(data['series'])  // passes pay data to chart
     })
     .catch(error => console.log(`response error: ${error}`))
 }
-
-// method to build chart

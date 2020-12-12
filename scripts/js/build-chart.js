@@ -4,7 +4,11 @@ author: Ross McLean
 desc: Build a chart using data from the LMI API
  */
 
-export const generateChart = () => {
+export const generateChart = estimatedPayObject => {
+  estimatedPayObject.forEach(object => {
+    console.log(object)
+  })
+
   const ctx = document.getElementById('myChart').getContext('2d')
   const myChart = new Chart(ctx, {
     type: 'line',
