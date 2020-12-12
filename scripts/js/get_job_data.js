@@ -101,7 +101,7 @@ export const getJobData = () => {
 }
 
 export const getLocation = () => {
-  const textBox = document.getElementById('location')
+  const combo = document.getElementById('location')
   let requestUrl = 'http://api.lmiforall.org.uk/api/v1/ashe/filter/region'
 
   fetch(requestUrl, {
@@ -113,7 +113,7 @@ export const getLocation = () => {
     .then(data => {
       const regionsArray = data['codings']
       regionsArray.forEach(object => {
-        const searchTerm = textBox.value.toLowerCase().trim()
+        const searchTerm = combo.options[combo.selectedIndex].text.toLowerCase().trim()
         if (object['name'].toLowerCase().includes(searchTerm)) {
           console.log(object['name'] + ' ' + object['value'])
           document.getElementById('location-title').innerText = object['name']
