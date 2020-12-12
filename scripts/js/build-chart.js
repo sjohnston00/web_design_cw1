@@ -5,14 +5,16 @@ desc: Build a chart using data from the LMI API
  */
 
 export const generateChart = estimatedPayData => {
-  console.log(estimatedPayData)
+  const chartYears = []
+  const chartWages = []
+
   const ctx = document.getElementById('myChart').getContext('2d')
   const myChart = new Chart(ctx, {
     type: 'line',
     data: {
       labels: ['2013', '2015', '2017', '2018'],  // loop data
       datasets: [{
-        label: 'Estimated mean weekly pay',
+        label: 'Estimated mean yearly pay',
         data: [100, 500, 600, 1000],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
