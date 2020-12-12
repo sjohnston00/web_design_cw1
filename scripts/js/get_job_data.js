@@ -9,9 +9,7 @@ import { generateChart } from './build-chart.js'
 
 export const getJobList = () => {
   const textBox = document.getElementById('job')
-
   let requestUrl = `http://api.lmiforall.org.uk/api/v1/soc/search?q=${textBox.value.trim()}`
-
   fetch(requestUrl, {
     method: 'GET',
     headers: {
