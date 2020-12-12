@@ -44,7 +44,6 @@ export const getJobList = () => {
 
       data.forEach(job => {
         const div = document.createElement('div')
-        const h3 = document.createElement('h3')
         const a = document.createElement('a')
         const p = document.createElement('p')
 
@@ -53,8 +52,7 @@ export const getJobList = () => {
         a.href = `job.html?soc=${job['soc']}`
         p.textContent = job['description']
 
-        h3.appendChild(a)
-        div.appendChild(h3)
+        div.appendChild(a)
         div.appendChild(p)
         jobListContainer.appendChild(div)
       })

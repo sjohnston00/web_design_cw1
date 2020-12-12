@@ -22,16 +22,19 @@
         <!--        TODO: Set required fields-->
         <form action="scripts/php/process_contact_data.php" id="contact-form" method="POST">
             <label for="forename">Forename</label>
-            <input id="forename" minlength="1" name="forename" placeholder="Enter your forename" required type="text">
+            <input id="forename" maxlength="50" minlength="1" name="forename" placeholder="Enter your forename" required
+                   type="text">
 
             <label for="surname">Surname</label>
-            <input id="surname" minlength="1" name="surname" placeholder="Enter your surname" required type="text">
+            <input id="surname" maxlength="50" minlength="1" name="surname" placeholder="Enter your surname" required
+                   type="text">
 
             <label for="email">Email</label>
             <input id="email" name="email" placeholder="Enter your email" required type="email">
 
             <label for="message">Message</label>
-            <textarea id="message" minlength="10" name="message" placeholder="Enter your message" required
+            <textarea id="message" maxlength="5000" minlength="10" name="message" placeholder="Enter your message"
+                      required
                       style="height:200px"></textarea>
 
             <input type="submit" value="Submit">

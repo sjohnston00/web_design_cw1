@@ -41,15 +41,13 @@ const getUniJson = () => {
 
       data.forEach(uni => {
         const div = document.createElement('div')
-        const h3 = document.createElement('h3')
+        const p = document.createElement('p')
         const a = document.createElement('a')
 
         div.className = 'list-entry'
-        h3.textContent = uni['name']
-        a.textContent = uni['web_pages'][0]
+        a.textContent = uni['name']
         a.href = uni['web_pages'][0]
 
-        div.appendChild(h3)
         div.appendChild(a)
         uniListContainer.appendChild(div)
       })
