@@ -460,7 +460,6 @@ main #soc-text, main #tags-paragraph {
     padding: 50px 200px;
 }
 
-#chart {
-    width: 400px;
-    height: auto;
+#chart-container {
+    margin: 100px;
 }
