@@ -1,7 +1,7 @@
 /*
 file: get_job_data.js
 author: Ross McLean
-desc: Gets jobs from an API and builds a list from the results
+desc: Contains functions which interrogate the LMI API
  */
 
 import * as Utilities from './utilities.js'
