@@ -28,8 +28,8 @@ export const generateChart = estimatedPayData => {
         ],
         borderColor: [
           'rgba(128, 200, 76, 1.0)',
-          'rgba(201, 51, 62, 1.0)',
-          'rgba(32, 50, 139, 1.0)'
+          'rgba(128, 200, 76, 1.0)',
+          'rgba(128, 200, 76, 1.0)'
         ],
         borderWidth: 2
       }]

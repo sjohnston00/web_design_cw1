@@ -461,5 +461,5 @@ main #soc-text, main #tags-paragraph {
 }
 
 #chart-container {
-    margin: 100px;
+    margin: 0 100px 100px 100px;
 }
