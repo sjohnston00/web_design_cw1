@@ -103,7 +103,6 @@ export const getJobData = () => {
 export const getLocation = () => {
   const combo = document.getElementById('location')
   let requestUrl = 'http://api.lmiforall.org.uk/api/v1/ashe/filter/region'
-
   fetch(requestUrl, {
     headers: {
       Accept: 'application/json'
@@ -126,8 +125,8 @@ export const getLocation = () => {
 
 const getLocationsEstimatedPay = regionValue => {
   const requestUrl =
-    `http://api.lmiforall.org.uk/api/v1/ashe/estimatePay?
-    soc=${Utilities.getSocFromUrl()}&filters=region%3A${regionValue}`
+    `http://api.lmiforall.org.uk/api/v1/ashe/estimatePay?`
+    + `soc=${Utilities.getSocFromUrl()}&filters=region%3A${regionValue}`
 
   fetch(requestUrl, {
     headers: {
