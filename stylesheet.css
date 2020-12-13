@@ -16,7 +16,7 @@ body {
     max-width: 1200px;
     min-width: 500px;
     flex-direction: column;
-    margin: 0px auto;
+    margin: 0 auto;
     position: relative;
     background-color: #FFFFFF;
 }
@@ -535,10 +535,6 @@ footer #footer-copyright {
         padding: 50px 100px;
     }
 
-    label, input {
-        font-size: 1.1em;
-    }
-
     #chart-container {
         margin: 0 50px 50px 50px;
     }
@@ -548,6 +544,20 @@ footer #footer-copyright {
     nav div a {
         font-size: 0.9em;
         padding: 20px 40px;
+    }
+}
+
+@media screen and (max-width: 895px) {
+    #index-banner {
+        background-size: 160%;
+    }
+
+    #location-title {
+        padding: 20px;
+    }
+
+    main, #chart-container {
+        margin: 50px 20px;
     }
 }
 
@@ -582,5 +592,30 @@ footer #footer-copyright {
     nav div a {
         font-size: 0.7em;
         padding: 20px 20px;
+    }
+
+    .link-list {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    #index-banner {
+        background-size: 190%;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    .search-bar div:nth-child(1) p {
+        text-align: center;
+    }
+
+    .search-bar div:nth-child(1) h3 {
+        display: none;
+    }
+
+    .search-bar div:nth-child(2) input[type=text],
+    .search-bar div:nth-child(2) select {
+        width: 65%;
     }
 }
