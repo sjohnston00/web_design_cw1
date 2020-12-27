@@ -1,621 +1,647 @@
 /*noinspection CssUnknownTarget*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,600;0,700;1,400&display=swap");
 
 * {
-    margin: 0;
+  margin: 0;
 }
 
 html {
-    background-color: #808080;
+  background-color: #808080;
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
-    display: flex;
-    min-height: 10vh;
-    max-width: 1200px;
-    min-width: 500px;
-    flex-direction: column;
-    margin: 0 auto;
-    position: relative;
-    background-color: #FFFFFF;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  min-height: 10vh;
+  min-width: 500px;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+  background-color: #ffffff;
 }
 
 /*Text*/
 h1 {
-    font-size: 2.4em;
-    color: #FFFFFF;
+  font-size: 2.4em;
+  color: #ffffff;
 }
 
 h2 {
-    font-size: 2.2em;
-    color: #FFFFFF;
-    padding-bottom: 20px;
+  font-size: 2.2em;
+  color: #ffffff;
+  padding-bottom: 20px;
 }
 
 h3 {
-    font-size: 2em;
-    padding-bottom: 20px;
+  font-size: 2em;
+  padding-bottom: 20px;
 }
 
 h4 {
-    font-size: 1.2em;
+  font-size: 1.2em;
 }
 
-a, li a {
-    text-decoration: none;
-    color: #FFFFFF;
+p {
+  line-height: 1.4em;
+  letter-spacing: 0.5px;
+}
+
+a,
+li a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /*Header*/
 header {
-    color: #FFFFFF;
-    background-color: #20328B;
-    height: 200px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-weight: bold;
-    font-size: xx-large;
+  color: #ffffff;
+  background-color: #20328b;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: xx-large;
 }
 
 /*Navigation bar*/
 nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #2A7CA4;
-    color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2a7ca4;
+  color: #ffffff;
 }
 
 nav div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 nav div a {
-    padding: 20px 60px;
-    color: #FFFFFF;
+  padding: 20px 60px;
+  color: #ffffff;
 }
 
 /*Banner*/
 .banner {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    height: 353px;
-    background-repeat: no-repeat;
-    background-size: 100% auto;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  height: 353px;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .gradient {
-    display: inherit;
-    flex-flow: inherit;
-    justify-content: inherit;
-    align-items: inherit;
-    height: inherit;
-    width: 100%;
+  display: inherit;
+  flex-flow: inherit;
+  justify-content: inherit;
+  align-items: inherit;
+  height: inherit;
+  width: 100%;
 }
 
-.banner p, .gradient p {
-    text-align: center;
-    font-size: 1.5em;
-    padding: 0 250px;
+.banner p,
+.gradient p {
+  text-align: center;
+  font-size: 1.5em;
+  padding: 0 250px;
 }
 
 #index-banner {
-    background-size: 100%;
-    background-image: url("media/images/banner.jpg");
-    color: #FFFFFF;
+  background-size: 100%;
+  background-image: url("media/images/banner.jpg");
+  color: #ffffff;
 }
 
 #funding-banner {
-    background-image: url("media/images/money.jpg");
-    background-size: 50%;
+  background-image: url("media/images/money.jpg");
+  background-size: 50%;
 }
 
 #funding-banner h2,
 #funding-banner p {
-    /*I can't figure out why the colour here can't be set in #funding-banner*/
-    color: rgba(0, 0, 0, 0.7);
+  /*I can't figure out why the colour here can't be set in #funding-banner*/
+  color: rgba(0, 0, 0, 0.7);
 }
 
 #funding-banner .gradient {
-    background-image: linear-gradient(
-            to right,
-            rgba(252, 253, 248, 0.3),
-            rgba(252, 253, 248, 1)
-    );
+  background-image: linear-gradient(
+    to right,
+    rgba(252, 253, 248, 0.3),
+    rgba(252, 253, 248, 1)
+  );
 }
 
 #about-us-banner {
-    background-image: url("media/images/about_us.jpg");
-    background-size: 50%;
-    color: rgba(255, 255, 255, 0.7);
+  background-image: url("media/images/about_us.jpg");
+  background-size: 50%;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 #about-us-banner .gradient {
-    background-image: linear-gradient(
-            to right,
-            rgba(181, 113, 36, 0.3),
-            rgba(181, 113, 36, 1)
-    );
+  background-image: linear-gradient(
+    to right,
+    rgba(181, 113, 36, 0.3),
+    rgba(181, 113, 36, 1)
+  );
 }
 
 #universities-banner {
-    background-image: url("media/images/uni.jpg");
-    background-size: 50%;
-    color: rgba(255, 255, 255, 0.7);
+  background-image: url("media/images/uni.jpg");
+  background-size: 50%;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 #universities-banner .gradient {
-    background-image: linear-gradient(
-            to right,
-            rgba(67, 53, 46, 0.3),
-            rgba(67, 53, 46, 1)
-    );
+  background-image: linear-gradient(
+    to right,
+    rgba(67, 53, 46, 0.3),
+    rgba(67, 53, 46, 1)
+  );
 }
 
 #job-search-banner {
-    background-image: url("media/images/magnifying_glass.jpg");
-    background-size: 40%;
-    color: rgba(255, 255, 255, 0.7);
+  background-image: url("media/images/magnifying_glass.jpg");
+  background-size: 40%;
+  color: rgba(255, 255, 255, 0.7);
 }
 
 #job-search-banner .gradient {
-    background-image: linear-gradient(
-            to right,
-            rgba(18, 29, 52, 0.3),
-            rgba(18, 29, 52, 1)
-    );
+  background-image: linear-gradient(
+    to right,
+    rgba(18, 29, 52, 0.3),
+    rgba(18, 29, 52, 1)
+  );
 }
 
 /*Main*/
 main {
-    flex: 1;
-    margin: 50px 200px;
+  flex: 1;
+  margin: 50px 200px;
 }
 
 /*Testimonials*/
 #testimonials {
-    display: flex;
-    justify-content: center;
-    text-align: center;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 #testimonials .testimonial {
-    display: block;
-    justify-content: center;
-    align-items: center;
-    padding: 50px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
 }
 
 #testimonials .testimonial img {
-    width: 200px;
-    height: auto;
-    /*display: block;*/
+  width: 200px;
+  height: auto;
+  border-radius: 50%;
+  margin: 20px;
+  box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.4);
 }
 
 #testimonials .testimonial blockquote {
-    font-style: italic;
-    font-size: large;
-    color: rgba(0, 0, 0, 0.7);
+  font-style: italic;
+  font-size: large;
+  line-height: 1.4em;
+  letter-spacing: 0.5px;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 #testimonials .testimonial p {
-    font-size: large;
-    font-weight: bold;
+  font-size: large;
+  font-weight: bold;
 }
 
 /*Form*/
-input[type=text], input[type=email], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #CCCCCC;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
 }
 
-input[type=submit] {
-    background-color: #80C84C;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
+input[type="submit"] {
+  background-color: #80c84c;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
-input[type=submit]:hover {
-    background-color: #49C84C;
+input[type="submit"]:hover {
+  background-color: #49c84c;
 }
 
 .form-container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
 }
 
 /*These rules apply to the text found in form_confirmation.html*/
 #confirm-message {
-    font-style: italic;
-    color: rgba(0, 0, 0, 0.5);
+  font-style: italic;
+  color: rgba(0, 0, 0, 0.5);
 }
 
 #confirm-note {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /*These rules apply to search bars*/
 /*They were a massive pain in the arse*/
 .search-bar {
-    /*margin: 50px 0;*/
-    width: 100%;
-    color: #FFFFFF;
-    background-color: rgba(128, 200, 76, 1);
-    font-size: 120%;
-    display: flex;
-    flex-flow: column;
+  /*margin: 50px 0;*/
+  width: 100%;
+  color: #ffffff;
+  background-color: rgba(128, 200, 76, 1);
+  font-size: 120%;
+  display: flex;
+  flex-flow: column;
 }
 
 .search-bar div:nth-child(1) * {
-    margin: 20px;
+  margin: 20px;
 }
 
 .search-bar div:nth-child(1) h3 {
-    margin: 14px;
-    padding-bottom: 0;
+  margin: 14px;
+  padding-bottom: 0;
 }
 
-.search-bar div:nth-child(2) input[type=text],
+.search-bar div:nth-child(2) input[type="text"],
 .search-bar div:nth-child(2) select {
-    margin: 15px;
-    width: 85%;
+  margin: 15px;
+  width: 85%;
 }
 
 .search-bar div:nth-child(1) p,
-.search-bar div:nth-child(2) input[type=text] {
-    float: left;
+.search-bar div:nth-child(2) input[type="text"] {
+  float: left;
 }
 
 .search-bar div:nth-child(1) h3,
 .search-bar div:nth-child(2) .search-btn {
-    float: right;
+  float: right;
 }
 
 .search-bar div:nth-child(2) {
-    background-color: rgba(96, 167, 65, 1);
-    margin-bottom: 20px;
+  background-color: rgba(96, 167, 65, 1);
+  margin-bottom: 20px;
 }
 
 .search-bar div:nth-child(2) .search-btn {
-    margin: 15px;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: #C9333D;
+  margin: 15px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #c9333d;
 }
 
 .result-count-container {
-    padding: 50px 100px 0 100px;
-    display: flex;
-    flex-flow: row;
+  padding: 50px 100px 0 100px;
+  display: flex;
+  flex-flow: row;
 }
 
 .result-count-container p {
-    font-weight: bold;
-    font-size: 120%;
+  font-weight: bold;
+  font-size: 120%;
 }
 
 /*Lists*/
-ul li a, a {
-    color: #20328B;
+ul li a,
+a {
+  color: #20328b;
 }
 
 ul li a:visited,
 a:visited {
-    /*color: #FFFFFF;*/
-    text-decoration: none;
+  /*color: #FFFFFF;*/
+  text-decoration: none;
 }
 
 .link-list {
-    flex: 1;
-    padding: 50px 200px;
-    background-color: rgba(0, 0, 0, 0.03);
-}
-
-.link-list > p {
-    padding: 20px;
+  flex: 1;
+  padding: 50px 200px;
+  background-color: rgba(0, 0, 0, 0.03);
 }
 
 #resources-list a {
-    color: #000000;
+  color: #000000;
 }
 
 #resources-list li:nth-child(1),
 #resources-list li:nth-child(4),
 #resources-list li:nth-child(7) {
-    font-size: 1.2em;
-    font-weight: bold;
+  font-size: 1.2em;
+  font-weight: bold;
 }
 
 #resources-list li:nth-child(2),
 #resources-list li:nth-child(5),
 #resources-list li:nth-child(8) {
-    text-decoration: underline;
-    list-style-type: none;
-    padding-bottom: 10px;
+  text-decoration: underline;
+  list-style-type: none;
+  padding-bottom: 10px;
 }
 
 #resources-list li:nth-child(3),
 #resources-list li:nth-child(6),
 #resources-list li:nth-child(9) {
-    font-style: italic;
-    list-style-type: none;
-    color: rgba(0, 0, 0, 0.7);
+  font-style: italic;
+  list-style-type: none;
+  color: rgba(0, 0, 0, 0.7);
 }
 
 #resources-list li:nth-child(3),
 #resources-list li:nth-child(6),
 #resources-list li:nth-child(9) {
-    padding-bottom: 40px;
+  padding-bottom: 40px;
+}
+
+#lmi-links-list {
+  list-style-type: none;
+  padding-left: 5px;
+}
+
+#lmi-links-list li {
+  margin: 10px 0;
 }
 
 #lmi-links-list a {
-    font-weight: normal;
-    text-decoration: underline;
-    list-style-type: none;
-    color: #000000;
+  font-weight: normal;
+  text-decoration: underline;
+  color: #000000;
 }
 
 #uni-link-list,
 #job-link-list {
-    padding: 0 100px 100px 100px;
+  padding: 0 100px 100px 100px;
 }
 
 #uni-link-list div:first-child,
 #job-link-list div:first-child {
-    border-top: none;
+  border-top: none;
 }
 
 #uni-link-list div:last-child,
 #job-link-list div:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
 .list-entry {
-    padding: 25px 0;
-    border-bottom: 2px solid #000000;
+  padding: 25px 0;
+  border-bottom: 2px solid #000000;
 }
 
 .list-entry a {
-    color: #20328B;
-    text-decoration: underline;
+  color: #20328b;
+  text-decoration: underline;
 }
 
 .list-entry a:visited {
-    color: purple;
-    text-decoration: underline;
+  color: purple;
+  text-decoration: underline;
 }
 
 main h4 {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
-main p, main #tasks-list {
-    padding-bottom: 40px;
+main p,
+main #tasks-list {
+  padding-bottom: 40px;
 }
 
-main #soc-text, main #tags-paragraph {
-    color: rgba(0, 0, 0, 0.6);
-    font-size: smaller;
-    padding-bottom: 10px;
+main #soc-text,
+main #tags-paragraph {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: smaller;
+  padding-bottom: 10px;
 }
 
 #job-main {
-    margin-bottom: 0;
+  margin-bottom: 0;
 }
 
 #job-main h2 {
-    color: #000000;
+  color: #000000;
 }
 
 #rate-of-pay-title {
-    padding-top: 20px;
+  padding-top: 20px;
 }
 
-#location-title, #chart {
-    text-align: center;
-    padding: 50px 200px;
+#location-title,
+#chart {
+  text-align: center;
+  padding: 50px 200px;
 }
 
 #chart-container {
-    margin: 0 100px 100px 100px;
+  margin: 0 100px 100px 100px;
 }
 
 /*Footer*/
 footer {
-    color: #FFFFFF;
-    background-color: #20328B;
+  color: #ffffff;
+  background-color: #20328b;
 }
 
 footer #footer-lists {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 #footer-lists li a {
-    color: #FFFFFF;
-    text-decoration: none;
+  color: #ffffff;
+  text-decoration: none;
 }
 
 footer #footer-lists div {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 footer div ul {
-    padding: 0;
-    margin: 0;
-    list-style-type: none;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
 }
 
 footer #copyright-container {
-    display: flex;
-    flex-flow: row;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
 }
 
 footer #footer-copyright {
-    text-align: center;
-    padding: 20px 0;
+  text-align: center;
+  padding: 20px 0;
 }
 
 /*Media queries*/
 @media screen and (max-width: 1100px) {
-    .banner p, .gradient p {
-        padding: 0 150px;
-    }
+  .banner p,
+  .gradient p {
+    padding: 0 150px;
+  }
 }
 
 @media screen and (max-width: 1051px) {
-    .search-bar div:nth-child(2) input[type=text],
-    .search-bar div:nth-child(2) select {
-        width: 70%;
-    }
+  .search-bar div:nth-child(2) input[type="text"],
+  .search-bar div:nth-child(2) select {
+    width: 70%;
+  }
 }
 
 @media screen and (max-width: 1000px) {
-    header {
-        height: 150px;
-    }
+  header {
+    height: 150px;
+  }
 
-    h1 {
-        font-size: 2.0em;
-    }
+  h1 {
+    font-size: 2em;
+  }
 
-    h2 {
-        font-size: 1.8em;
-    }
+  h2 {
+    font-size: 1.8em;
+  }
 
-    h3 {
-        font-size: 1.6em;
-    }
+  h3 {
+    font-size: 1.6em;
+  }
 
-    h4 {
-        font-size: 1.0em;
-    }
+  h4 {
+    font-size: 1em;
+  }
 
-    p, li {
-        font-size: 0.9em;
-    }
+  p,
+  li {
+    font-size: 0.9em;
+  }
 
-    .banner p, .gradient p {
-        font-size: 1.0em;
-    }
+  .banner p,
+  .gradient p {
+    font-size: 1em;
+  }
 
-    nav {
-        font-size: 0.9em;
-    }
+  nav {
+    font-size: 0.9em;
+  }
 
-    .gradient p {
-        padding: 0 150px;
-    }
+  .gradient p {
+    padding: 0 150px;
+  }
 
-    main {
-        margin: 50px 100px;
-    }
+  main {
+    margin: 50px 100px;
+  }
 
-    .link-list {
-        padding: 50px 100px;
-    }
+  .link-list {
+    padding: 50px 100px;
+  }
 
-    #chart-container {
-        margin: 0 50px 50px 50px;
-    }
+  #chart-container {
+    margin: 0 50px 50px 50px;
+  }
 }
 
 @media screen and (max-width: 965px) {
-    nav div a {
-        font-size: 0.9em;
-        padding: 20px 40px;
-    }
+  nav div a {
+    font-size: 0.9em;
+    padding: 20px 40px;
+  }
 }
 
 @media screen and (max-width: 895px) {
-    #index-banner {
-        background-size: 160%;
-    }
+  #index-banner {
+    background-size: 160%;
+  }
 
-    #location-title {
-        padding: 20px;
-    }
+  #location-title {
+    padding: 20px;
+  }
 
-    main, #chart-container {
-        margin: 50px 20px;
-    }
+  main,
+  #chart-container {
+    margin: 50px 20px;
+  }
 }
 
 @media screen and (max-width: 830px) {
-    h1 {
-        font-size: 1.5em;
-    }
+  h1 {
+    font-size: 1.5em;
+  }
 
-    .banner p, .gradient p {
-        padding: 0 50px;
-    }
+  .banner p,
+  .gradient p {
+    padding: 0 50px;
+  }
 
-    #testimonials {
-        display: flex;
-        flex-direction: column;
-    }
+  #testimonials {
+    display: flex;
+    flex-direction: column;
+  }
 
-    footer #footer-lists {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        font-size: 1.2em;
-    }
+  footer #footer-lists {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2em;
+  }
 }
 
 @media screen and (max-width: 730px) {
-    header {
-        height: 130px;
-    }
+  header {
+    height: 130px;
+  }
 
-    nav div a {
-        font-size: 0.7em;
-        padding: 20px 20px;
-    }
+  nav div a {
+    font-size: 0.7em;
+    padding: 20px 20px;
+  }
 
-    .link-list {
-        padding: 50px;
-    }
+  .link-list {
+    padding: 50px;
+  }
 }
 
 @media screen and (max-width: 570px) {
-    #index-banner {
-        background-size: 190%;
-    }
+  #index-banner {
+    background-size: 190%;
+  }
 }
 
 @media screen and (max-width: 560px) {
-    .search-bar div:nth-child(1) p {
-        text-align: center;
-    }
+  .search-bar div:nth-child(1) p {
+    text-align: center;
+  }
 
-    .search-bar div:nth-child(1) h3 {
-        display: none;
-    }
+  .search-bar div:nth-child(1) h3 {
+    display: none;
+  }
 
-    .search-bar div:nth-child(2) input[type=text],
-    .search-bar div:nth-child(2) select {
-        width: 65%;
-    }
+  .search-bar div:nth-child(2) input[type="text"],
+  .search-bar div:nth-child(2) select {
+    width: 65%;
+  }
 }
