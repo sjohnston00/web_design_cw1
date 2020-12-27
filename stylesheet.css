@@ -3,6 +3,7 @@
 
 * {
   margin: 0;
+  box-sizing: border-box;
 }
 
 html {
@@ -229,10 +230,13 @@ textarea {
   padding: 12px;
   border: 1px solid #cccccc;
   border-radius: 4px;
-  box-sizing: border-box;
   margin-top: 6px;
   margin-bottom: 16px;
   resize: vertical;
+}
+
+textarea {
+  font-family: "Open Sans";
 }
 
 input[type="submit"] {
@@ -266,50 +270,40 @@ input[type="submit"]:hover {
 
 /*These rules apply to search bars*/
 /*They were a massive pain in the arse*/
+/*TODO: Maybe you should get rid of the above comment :)*/
 .search-bar {
-  /*margin: 50px 0;*/
-  width: 100%;
   color: #ffffff;
   background-color: rgba(128, 200, 76, 1);
   font-size: 120%;
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
 }
 
-.search-bar div:nth-child(1) * {
-  margin: 20px;
+.search-bar .search-bar-top {
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.search-bar div:nth-child(1) h3 {
-  margin: 14px;
+.search-bar .search-bar-top h3 {
+  margin: 15px;
   padding-bottom: 0;
 }
 
-.search-bar div:nth-child(2) input[type="text"],
-.search-bar div:nth-child(2) select {
-  margin: 15px;
-  width: 85%;
-}
-
-.search-bar div:nth-child(1) p,
-.search-bar div:nth-child(2) input[type="text"] {
-  float: left;
-}
-
-.search-bar div:nth-child(1) h3,
-.search-bar div:nth-child(2) .search-btn {
-  float: right;
-}
-
-.search-bar div:nth-child(2) {
+.search-bar .search-bar-bottom {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 10px;
   background-color: rgba(96, 167, 65, 1);
-  margin-bottom: 20px;
 }
 
-.search-bar div:nth-child(2) .search-btn {
-  margin: 15px;
-  padding-left: 40px;
-  padding-right: 40px;
+.search-bar .search-bar-bottom input {
+  height: 100%;
+}
+.search-bar .search-bar-bottom .search-btn {
+  padding: 14px 40px;
+  margin: 5px 0 5px 15px;
   background-color: #c9333d;
 }
 
@@ -468,6 +462,10 @@ footer #footer-lists {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
+}
+
+#footer-lists li {
+  margin: 5px 2px;
 }
 
 #footer-lists li a {

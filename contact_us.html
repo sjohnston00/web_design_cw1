@@ -1,57 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
     <title>UK Job Search - Contact Us</title>
-    <link href="stylesheet.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-<div class="module-container" id="header"></div>
-<div class="module-container" id="nav"></div>
+    <link href="stylesheet.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="module-container" id="header"></div>
+    <div class="module-container" id="nav"></div>
 
-<!--  Unique page content here  -->
-<main>
-    <h3>Contact Us</h3>
-    <p>
-        If you have any questions or feedback regarding our site, please feel free to contact us using the following
-        form, being mindful to fill in all the required information. Please remember that we cannot provide support for
-        external services, such as the LMI for All API, university listings and funding listings.
-    </p>
-    <br>
-    <div class="form-container">
-        <!--        TODO: Set required fields-->
-        <form action="scripts/php/process_contact_data.php" id="contact-form" method="POST">
-            <label for="forename">Forename</label>
-            <input id="forename" maxlength="50" minlength="1" name="forename" placeholder="Enter your forename" required
-                   type="text">
+    <!--  Unique page content here  -->
+    <main>
+      <h3>Contact Us</h3>
+      <p>
+        If you have any questions or feedback regarding our site, please feel
+        free to contact us using the following form, being mindful to fill in
+        all the required information. Please remember that we cannot provide
+        support for external services, such as the LMI for All API, university
+        listings and funding listings.
+      </p>
+      <br />
+      <div class="form-container">
+        <form
+          action="scripts/php/process_contact_data.php"
+          id="contact-form"
+          method="POST"
+        >
+          <label for="forename">Forename</label>
+          <input
+            id="forename"
+            maxlength="50"
+            minlength="1"
+            name="forename"
+            placeholder="Enter your forename"
+            required
+            type="text"
+            autocomplete="given-name"
+          />
 
-            <label for="surname">Surname</label>
-            <input id="surname" maxlength="50" minlength="1" name="surname" placeholder="Enter your surname" required
-                   type="text">
+          <label for="surname">Surname</label>
+          <input
+            id="surname"
+            maxlength="50"
+            minlength="1"
+            name="surname"
+            placeholder="Enter your surname"
+            required
+            type="text"
+            autocomplete="family-name"
+          />
 
-            <label for="email">Email</label>
-            <input id="email" name="email" placeholder="Enter your email" required type="email">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+            type="email"
+            autocomplete="email"
+          />
 
-            <label for="message">Message</label>
-            <textarea id="message" maxlength="5000" minlength="10" name="message" placeholder="Enter your message"
-                      required
-                      style="height:200px"></textarea>
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            maxlength="5000"
+            minlength="10"
+            name="message"
+            placeholder="Enter your message..."
+            required
+            style="height: 200px"
+          ></textarea>
 
-            <input type="submit" value="Submit">
+          <input type="submit" value="Submit" />
         </form>
-    </div>
-</main>
+      </div>
+    </main>
 
-<div class="link-list">
-    <h3>Social Media</h3>
-    <p>We also have a social media presence. You can find us at Facebook and Twitter using the following links</p>
-    <ul id="lmi-links-list">
-        <li><a href="https://www.facebook.com">https://www.facebook.com/uk-job-search</a></li>
-        <li><a href="https://www.twitter.com">https://www.twitter.com/uk-job-search</a></li>
-    </ul>
-</div>
-<div class="module-container" id="footer"></div>
-<script src="scripts/js/lib/jquery-3.5.1.min.js"></script>
-<script src="scripts/js/load_modules.js"></script>
-</body>
+    <div class="link-list">
+      <h3>Social Media</h3>
+      <p>
+        We also have a social media presence. You can find us at Facebook and
+        Twitter using the following links
+      </p>
+      <ul id="lmi-links-list">
+        <li>
+          <a href="https://www.facebook.com"
+            >https://www.facebook.com/uk-job-search</a
+          >
+        </li>
+        <li>
+          <a href="https://www.twitter.com"
+            >https://www.twitter.com/uk-job-search</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="module-container" id="footer"></div>
+    <script src="scripts/js/lib/jquery-3.5.1.min.js"></script>
+    <script src="scripts/js/load_modules.js"></script>
+  </body>
 </html>
